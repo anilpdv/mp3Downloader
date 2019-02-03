@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title> </title>
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="">
+    <!-- only css layout -->
+    <div class="container">
+      <div class="sidebar">
+        <div class="icon-main-back">
+          <i class="fas fa-headphones fa-4x icon-main"></i>
+          <h1 class="header-h1">Player</h1>
+        </div>
+        <div class="icons">
+          <i class="fas fa-home fa-2x"></i>
+          <i id="player" class="fas fa-music fa-2x"></i>
+          <i class="fab fa-youtube fa-2x"></i>
+        </div>
+      </div>
+      <div class="main">
+        <div class="player-main">
+          <div class="buttons">
+            <button id="prev">prev</button> <button id="play">play</button>
+            <button id="pause">pause</button> <button id="next">next</button>
+            <span id="songName"></span>
+          </div>
+        </div>
+
+        <div id="songsList" class="grid-container"></div>
+      </div>
+    </div>
+
+    <!-- Insert this line above script imports -->
+    <script>
+      if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.js"
+    ></script>
+    <script>
+      if (window.module) module = window.module;
+    </script>
+    <script src="../renderers/player.js"></script>
+  </body>
+</html>

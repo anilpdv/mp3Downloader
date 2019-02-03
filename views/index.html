@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title> </title>
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="">
+    <!-- only css layout -->
+    <div class="container">
+      <div class="sidebar">
+        <div class="icon-main-back">
+          <i class="fas fa-headphones fa-4x icon-main"></i>
+          <h1 class="header-h1">mp3</h1>
+        </div>
+        <div class="icons">
+          <i id="home" class="fas fa-home fa-2x"></i>
+          <i id="player" class="fas fa-music fa-2x"></i>
+          <i id="lyrics" class="fab fa-youtube fa-2x"></i>
+        </div>
+      </div>
+      <div class="main">
+        <div class="input-main">
+          <input id="input" type="text" name="search" placeholder="search.." />
+          <i id="search" class="fab fa-searchengin fa-2x"></i>
+        </div>
+
+        <div id="app" class="grid-container"></div>
+      </div>
+    </div>
+
+    <!-- Insert this line above script imports -->
+    <script>
+      if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      if (window.module) module = window.module;
+    </script>
+    <script src="../renderers/index.js"></script>
+  </body>
+</html>

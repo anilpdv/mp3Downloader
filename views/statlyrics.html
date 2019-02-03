@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="stylesheet" href="../public/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="icon-main-back">
+          <i class="fas fa-headphones fa-4x icon-main"></i>
+          <h1 class="header-h1">Lyrics</h1>
+        </div>
+        <div class="icons">
+          <i class="fas fa-home fa-2x"></i> <i class="fas fa-music fa-2x"></i>
+          <i class="fab fa-youtube fa-2x"></i>
+        </div>
+      </div>
+      <div class="main">
+        <div class="lyrics-block">
+          <div id="lyrics"></div>
+          <a class="btn">go to </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Insert this line above script imports  -->
+    <script>
+      if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      if (window.module) module = window.module;
+    </script>
+    <script src="../renderers/statlyrics.js"></script>
+  </body>
+</html>

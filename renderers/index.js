@@ -106,11 +106,13 @@ classFunction = videoId => {
 };
 
 ipcRenderer.on('loading:data', (event, data) => {
+  console.log(data);
   $(`.${data.videoId}`).html(`
-                   <div class="progress">
-                       <div class="progress-bar bg-success" role="progressbar" style="width:${
-                         data.data
-                       }%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                   <div class="progress" >
+                      <div style="background:red; height:24px; margin-top:14px; border-radius:400px; width:${
+                        data.data
+                      }%">
+      </div>
                    </div>`);
 });
 

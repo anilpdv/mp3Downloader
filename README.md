@@ -10,8 +10,13 @@
 ```git
 // clone the app
 https://github.com/anilpdv/mp3Downloader.git
+
 // change directory to mp3Downloader folder
 cd mp3Downloader
+
+// install all packages needed
+npm install
+
 // Then enter
 npm start
 ```
